@@ -1,0 +1,155 @@
+.task-list-container {
+  max-width: 600px;
+  margin: 24px auto;
+}
+
+.no-tasks {
+  text-align: center;
+  color: #6b7280;
+}
+
+.task-card {
+  background-color: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.2s ease;
+  margin-bottom: 16px;
+}
+
+.task-card:hover {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.task-card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.task-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+}
+
+.task-description {
+  font-size: 0.875rem;
+  color: #4b5563;
+  margin-top: 4px;
+}
+
+.task-due-date {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+.task-status {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-radius: 9999px;
+  padding: 4px 8px;
+}
+
+/* Status colors */
+.task-status.completed {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.task-status.in-progress {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.task-status.pending {
+  background-color: #f3f4f6;
+  color: #374151;
+}
+
+.task-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.edit-btn,
+.delete-btn {
+  font-size: 0.875rem;
+  font-weight: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.edit-btn {
+  color: #2563eb;
+}
+
+.edit-btn:hover {
+  color: #1d4ed8;
+}
+
+.delete-btn {
+  color: #dc2626;
+}
+
+.delete-btn:hover {
+  color: #b91c1c;
+}
+
+
+.task-form {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 24px;
+  max-width: 600px;
+  margin: 24px auto;
+  space-between: 16px;
+}
+
+.task-form-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #4b5563;
+  margin-bottom: 16px;
+}
+
+.task-form-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 16px;
+  outline: none;
+}
+
+.task-form-input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+}
+
+.task-form-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #2563eb;
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.task-form-button:hover {
+  background-color: #1d4ed8;
+}
